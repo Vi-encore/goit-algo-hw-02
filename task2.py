@@ -2,7 +2,9 @@ from collections import deque
 import re
 
 
-def is_palindrome(str):
+def is_palindrome():
+    str = input("Enter your string: ")
+
     str_clean = re.findall(r"\w", str.lower())
     char_deque = deque()
     for char in str_clean:
@@ -16,5 +18,4 @@ def is_palindrome(str):
     print("String is palindrome")
     return True
 
-
-is_palindrome("Aga i aga")
+is_palindrome()
