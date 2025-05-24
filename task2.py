@@ -3,9 +3,9 @@ import re
 
 
 def is_palindrome() -> bool:
-    str = input("Enter your string: ")
+    check_str = input("Enter your string: ")
 
-    str_clean = re.findall(r"\w", str.lower())
+    str_clean = re.findall(r"\w", check_str.lower())
     char_deque = deque()
     for char in str_clean:
         char_deque.append(char)
